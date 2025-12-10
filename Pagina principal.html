@@ -1,58 +1,83 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="ca">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Título de tu Página Web</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <title>Portafoli | El teu Nom</title>
+    <meta name="description" content="Pàgina de portafoli que mostra els projectes destacats de l'usuari.">
+
+    <link rel="stylesheet" href="css/estils.css">
+
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
 
     <header>
-        <h1>Nombre de tu Sitio Web</h1>
+        <div class="logo">
+            <img src="imatges/logo.svg" alt="Logo de l'empresa o nom">
+            <h1>El Teu Nom / Marca</h1>
+        </div>
+
         <nav>
             <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="servicios.html">Servicios</a></li>
-                <li><a href="acerca.html">Acerca de</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="#inici">Inici</a></li>
+                <li><a href="#projectes">Projectes</a></li>
+                <li><a href="#sobre-mi">Sobre Mi</a></li>
+                <li><a href="#contacte">Contacte</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section id="hero">
-            <h2>Bienvenido a nuestra web</h2>
-            <p>Aquí puedes encontrar lo que necesitas.</p>
-            <a href="#contacto" class="button">¡Contáctanos!</a>
+
+        <section id="projectes" class="llista-projectes">
+            <h2>Els Meus Projectes Destacats</h2>
+
+            <article class="projecte-item projecte-esquerra">
+                <figure class="projecte-imatge">
+                    <img src="imatges/projecte1.jpg" alt="Imatge del Projecte 1">
+                    <figcaption>foto</figcaption>
+                </figure>
+
+                <div class="projecte-text">
+                    <h3>Projecte 1</h3>
+                    <p class="parraf">Descripció concisa del projecte, objectius, i tecnologies utilitzades.</p>
+                    <p class="parraf">Més detalls sobre la implementació i els resultats aconseguits.</p>
+                    <p class="parraf">Qualsevol conclusió addicional rellevant.</p>
+                </div>
+            </article>
+
+            <article class="projecte-item projecte-dreta">
+
+                <div class="projecte-text">
+                    <h3>Projecte 2</h3>
+                    <p class="parraf">Descripció concisa del projecte, objectius, i tecnologies utilitzades.</p>
+                    <p class="parraf">Més detalls sobre la implementació i els resultats aconseguits.</p>
+                    <p class="parraf">Qualsevol conclusió addicional rellevant.</p>
+                </div>
+
+                <figure class="projecte-imatge">
+                    <img src="imatges/projecte2.jpg" alt="Imatge del Projecte 2">
+                    <figcaption>foto</figcaption>
+                </figure>
+            </article>
+
         </section>
 
-        <section id="contenido">
-            <h3>Nuestros principales servicios</h3>
-            <article>
-                <h4>Servicio Uno</h4>
-                <p>Descripción breve del servicio uno.</p>
-            </article>
-            <article>
-                <h4>Servicio Dos</h4>
-                <p>Descripción breve del servicio dos.</p>
-            </article>
-        </section>
-
-        <aside>
-            <h4>Información Adicional</h4>
-            <p>Datos curiosos o enlaces de interés.</p>
+        <aside class="informacio-complementaria">
+            <h3>Testimonis de Clients</h3>
+            <p>"Una feina excel·lent i molt professional." - Client Fictici.</p>
         </aside>
 
     </main>
 
     <footer>
-        <p>&copy; 2025 Nombre de tu Sitio Web. Todos los derechos reservados.</p>
-        <nav>
-            <a href="politica.html">Política de Privacidad</a> |
-            <a href="terminos.html">Términos de Uso</a>
-        </nav>
+        <p>&copy; 2025 El Teu Nom. Tots els drets reservats.</p>
+        <div class="xarxes-socials">
+            <a href="[Enllaç LinkedIn]" target="_blank">LinkedIn</a> |
+            <a href="[Enllaç GitHub]" target="_blank">GitHub</a> |
+            <a href="mailto:el.teu.correu@exemple.com">Correu Electrònic</a>
+        </div>
     </footer>
 
 </body>
