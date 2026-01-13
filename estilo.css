@@ -7,13 +7,13 @@
 
 /* PALETA MEDIEVAL-FUTURISTA */
 :root {
-    --fondo: #e6e9ef; /* Pergamino claro futurista */
+    --fondo: #e6e9ef;
     --fondo-oscuro: #d5d8e0;
-    --tinta: #1b1f28; /* Tinta oscura para contraste */
-    --metal: #7f8c8d; /* Gris acero */
-    --azul: #3b4f6b; /* Azul frío */
-    --verde: #4f6d5f; /* Verde apagado futurista */
-    --detalle: #bfa66a; /* Dorado suave */
+    --tinta: #1b1f28;
+    --metal: #7f8c8d;
+    --azul: #3b4f6b;
+    --verde: #4f6d5f;
+    --detalle: #bfa66a;
     --sombra: rgba(0, 0, 0, 0.2);
 }
 
@@ -199,4 +199,108 @@ footer a:hover {
 /* MODO OSCURO */
 body.modo-oscuro {
     filter: brightness(0.85) contrast(1.1);
+}
+
+/* ====== MEDIA QUERIES RESPONSIVE ====== */
+
+/* Tablets grandes */
+@media (max-width: 1024px) {
+    main {
+        padding: 0 30px;
+        margin: 60px auto;
+    }
+
+    header {
+        padding: 40px 30px;
+    }
+
+    .projecte-item {
+        gap: 30px;
+        padding: 30px;
+    }
+
+    .projecte-imatge img {
+        width: 280px;
+    }
+}
+
+/* Tablets y móviles */
+@media (max-width: 768px) {
+    header {
+        padding: 30px 15px;
+        align-items: center;
+    }
+
+    .logo {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 15px;
+        margin-top: 15px;
+        align-items: center;
+    }
+
+    #tema-btn {
+        margin-top: 15px;
+    }
+
+    main {
+        padding: 0 15px;
+        margin: 40px auto;
+    }
+
+    .projecte-item {
+        flex-direction: column !important;
+        gap: 20px;
+        padding: 20px;
+        margin-bottom: 60px;
+    }
+
+    .projecte-text h3 {
+        font-size: 1.5rem;
+    }
+
+    .parraf {
+        font-size: 0.95rem;
+    }
+
+    main h2 {
+        font-size: 1.8rem;
+        letter-spacing: 3px;
+        margin: 40px 0 25px 0;
+    }
+
+    main h2::before,
+    main h2::after {
+        font-size: 1rem;
+    }
+
+    .informacio-complementaria {
+        padding: 20px;
+        margin: 40px 0;
+    }
+
+    footer {
+        padding: 30px 15px;
+        font-size: 0.9rem;
+    }
+}
+
+/* Móviles pequeños */
+@media (max-width: 480px) {
+    body {
+        font-size: 14px;
+    }
+
+    h3 {
+        font-size: 1.2rem;
+    }
+
+    .parraf {
+        font-size: 0.9rem;
+    }
 }
