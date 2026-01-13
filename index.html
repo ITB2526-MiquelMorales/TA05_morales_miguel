@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portafoli | El teu Nom</title>
+    <title>Portafoli | Miguel Angel</title>
     <meta name="description" content="Pàgina de portafoli que mostra els projectes destacats de l'usuari.">
 
     <link rel="stylesheet" href="estilo.css">
@@ -17,41 +17,45 @@
     <header>
         <div class="logo">
             <img src="sus.png" alt="Logo de l'empresa o nom">
-            <h1>El Teu Nom / Marca</h1>
+            <h1>Miguel Angel</h1>
         </div>
 
         <nav>
             <ul>
-                <li><a href="#inici">Inici</a></li>
-                <li><a href="projectes.html">Projectes</a></li>
-                <li><a href="#sobre-mi">Sobre Mi</a></li>
-                <li><a href="#contacte">Contacte</a></li>
+                <li><a href="#inici">Home</a></li>
+                <li><a href="projectes.html">Projects</a></li>
+                <li><a href="#sobre-mi">About Me</a></li>
+                <li><a href="#contacte">Contact</a></li>
             </ul>
         </nav>
 
         <!-- BOTÓN CAMBIO DE TEMA -->
-        <button id="tema-btn">Canviar Tema</button>
+        <button id="tema-btn">Change the theme</button>
     </header>
 
     <main>
 
         <section id="projectes" class="llista-projectes">
-            <h2>Els Meus Projectes Destacats</h2>
+            <h2>My Featured Projects</h2>
 
+            <!-- Projecte 1 ahora enlaza a projecte1.html -->
             <article class="projecte-item projecte-esquerra">
-                <figure class="projecte-imatge">
-                    <img src="imagen1.png" alt="Imatge del Projecte 1">
-                    <figcaption>foto</figcaption>
-                </figure>
+                <a href="projecte1.html" class="projecte-link">
+                    <figure class="projecte-imatge">
+                        <img src="imagen1.png" alt="Imatge del Projecte 1">
+                        <figcaption>Projecte 1</figcaption>
+                    </figure>
 
-                <div class="projecte-text">
-                    <h3>Projecte 1</h3>
-                    <p class="parraf">Descripció concisa del projecte, objectius, i tecnologies utilitzades.</p>
-                    <p class="parraf">Més detalls sobre la implementació i els resultats aconseguits.</p>
-                    <p class="parraf">Qualsevol conclusió addicional rellevant.</p>
-                </div>
+                    <div class="projecte-text">
+                        <h3>Projecte 1</h3>
+                        <p class="parraf">Descripció concisa del projecte, objectius i tecnologies utilitzades.</p>
+                        <p class="parraf">Més detalls sobre la implementació i els resultats aconseguits.</p>
+                        <p class="parraf">Qualsevol conclusió addicional rellevant.</p>
+                    </div>
+                </a>
             </article>
 
+            <!-- Projecte 2 sigue igual -->
             <article class="projecte-item projecte-dreta">
                 <div class="projecte-text">
                     <h3>Projecte 2</h3>
@@ -67,21 +71,21 @@
             </article>
         </section>
 
-        <!-- SOBRE MI -->
-        <section id="sobre-mi">
-            <h2>Sobre Mi</h2>
-            <p class="parraf">Breu descripció personal o professional.</p>
+        <!-- About Me -->
+        <section id="About Me">
+            <h2>About Me</h2>
+            <p class="parraf">cybersecurity student</p>
         </section>
 
         <aside class="informacio-complementaria">
-            <h3>Testimonis de Clients</h3>
-            <p>"Una feina excel·lent i molt professional." - Client Fictici.</p>
+            <h3>Reviews</h3>
+            <p>"An excellent and very professional job"</p>
         </aside>
 
-        <!-- CONTACTE -->
-        <section id="contacte">
-            <h2>Contacte</h2>
-            <p class="parraf">Pots contactar amb mi per correu o xarxes socials.</p>
+        <!-- CONTACT -->
+        <section id="contact">
+            <h2>Contact</h2>
+            <p class="parraf">miquel.morales.7e9@itb.cat</p>
         </section>
 
     </main>
@@ -138,3 +142,4 @@
 
 </body>
 </html>
+
