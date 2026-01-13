@@ -1,0 +1,202 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* PALETA MEDIEVAL-FUTURISTA */
+:root {
+    --fondo: #e6e9ef; /* Pergamino claro futurista */
+    --fondo-oscuro: #d5d8e0;
+    --tinta: #1b1f28; /* Tinta oscura para contraste */
+    --metal: #7f8c8d; /* Gris acero */
+    --azul: #3b4f6b; /* Azul frío */
+    --verde: #4f6d5f; /* Verde apagado futurista */
+    --detalle: #bfa66a; /* Dorado suave */
+    --sombra: rgba(0, 0, 0, 0.2);
+}
+
+/* BODY */
+body {
+    font-family: "Garamond", "Times New Roman", serif;
+    background: linear-gradient(180deg, #2c2f38, #1f2229);
+    color: var(--tinta);
+    line-height: 1.8;
+}
+
+/* HEADER */
+header {
+    background: linear-gradient(180deg, var(--fondo), var(--fondo-oscuro));
+    padding: 50px 70px;
+    border-bottom: 3px solid var(--metal);
+    box-shadow: 0 10px 25px var(--sombra);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.logo img {
+    width: 55px;
+}
+
+.logo h1 {
+    font-weight: 600;
+    letter-spacing: 3px;
+    color: var(--azul);
+}
+
+/* NAV */
+nav ul {
+    display: flex;
+    gap: 40px;
+    list-style: none;
+    margin-top: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--tinta);
+    font-weight: 600;
+    position: relative;
+}
+
+nav a::after {
+    content: "✦";
+    position: absolute;
+    right: -18px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    color: var(--detalle);
+}
+
+nav a:hover::after {
+    opacity: 1;
+}
+
+/* BOTÓN CAMBIO DE TEMA */
+#tema-btn {
+    margin-top: 20px;
+    padding: 6px 12px;
+    border: 2px solid var(--metal);
+    background: var(--fondo-oscuro);
+    color: var(--tinta);
+    cursor: pointer;
+    font-weight: 600;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+#tema-btn:hover {
+    background: var(--fondo);
+}
+
+/* MAIN */
+main {
+    max-width: 1150px;
+    margin: 80px auto;
+    padding: 0 50px;
+    background: linear-gradient(180deg, var(--fondo), var(--fondo-oscuro));
+    box-shadow: 0 20px 60px var(--sombra);
+    border: 3px solid var(--metal);
+    border-radius: 12px;
+}
+
+/* SECCIONES TITULOS */
+main h2 {
+    text-align: center;
+    font-size: 2.4rem;
+    margin: 60px 0 40px 0;
+    color: var(--azul);
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    position: relative;
+}
+
+main h2::before,
+main h2::after {
+    content: "✦ ✦ ✦";
+    display: block;
+    font-size: 1.2rem;
+    color: var(--detalle);
+    margin: 20px 0;
+}
+
+/* PROYECTOS */
+.projecte-item {
+    display: flex;
+    gap: 70px;
+    margin-bottom: 120px;
+    padding: 50px;
+    border: 2px solid var(--metal);
+    background: linear-gradient(180deg, #f0f2f5, #d5d8e0);
+    box-shadow: inset 0 0 30px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 8px;
+}
+
+.projecte-dreta {
+    flex-direction: row-reverse;
+}
+
+.projecte-imatge img {
+    width: 360px;
+    border: 2px solid var(--metal);
+    padding: 8px;
+    background: #e6e9ef;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.2);
+    border-radius: 5px;
+}
+
+.projecte-text h3 {
+    font-size: 1.8rem;
+    color: var(--verde);
+    margin-bottom: 25px;
+    font-weight: 600;
+}
+
+.parraf {
+    color: #3b3f4a;
+    margin-bottom: 18px;
+}
+
+/* ASIDE */
+.informacio-complementaria {
+    margin: 80px 0;
+    padding: 50px;
+    border: 2px solid var(--metal);
+    background: linear-gradient(180deg, #e6e9ef, #d5d8e0);
+    font-style: italic;
+    box-shadow: inset 0 0 30px rgba(0,0,0,0.15);
+    border-radius: 10px;
+}
+
+/* FOOTER */
+footer {
+    background: linear-gradient(180deg, #1b1f28, #14171f);
+    color: var(--detalle);
+    text-align: center;
+    padding: 50px;
+    border-top: 3px solid var(--metal);
+    font-size: 0.95rem;
+}
+
+footer a {
+    color: var(--detalle);
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* MODO OSCURO */
+body.modo-oscuro {
+    filter: brightness(0.85) contrast(1.1);
+}
